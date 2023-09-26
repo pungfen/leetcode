@@ -2,7 +2,6 @@
   "name": "leetcode",
   "type": "module",
   "devDependencies": {
-    "@tsconfig/node16": "^16.1.1",
     "prettier": "^3.0.2",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.6"
