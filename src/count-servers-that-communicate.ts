@@ -7,7 +7,7 @@
 
 type Flag = 0 | 1
 
-function countServers(grid: Flag[][]): number {
+export function countServers(grid: Flag[][]): number {
   const computers: Array<[number, number]> = []
   const cm: Array<number> = []
   const cn: Array<number> = []
