@@ -16,19 +16,19 @@ export class StockPrice {
     this.cur = Math.max(this.cur, timestamp)
     this.max =
       timestamp === this.max
-        ? price > (this.stock.get(this.max) ?? 0)
+        ? price > this.maximum()
           ? this.max
           : this.getMaxTimestamp()
-        : price > (this.stock.get(this.max) ?? 0)
+        : price > this.maximum()
         ? timestamp
         : this.max || timestamp
 
     this.min =
       timestamp === this.min
-        ? price < (this.stock.get(this.min) ?? 0)
+        ? price < this.minimum()
           ? this.min
           : this.getMinTimestamp()
-        : price < (this.stock.get(this.min) ?? 0)
+        : price < this.minimum()
         ? timestamp
         : this.min || timestamp
   }
