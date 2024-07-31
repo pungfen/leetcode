@@ -1,3 +1,10 @@
+/**
+ *
+ * @param n
+ * @returns
+ *
+ * @see https://leetcode.cn/problems/fibonacci-number
+ */
 function fib(n: number): number {
   const d = [0, 1]
 
