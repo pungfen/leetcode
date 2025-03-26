@@ -3,13 +3,11 @@
   "configurations": [
     {
       "type": "node",
-      "name": "ts-node",
+      "name": "tsx",
       "request": "launch",
-      "args": ["${relativeFile}"],
-      "env": {
-        "NODE_OPTIONS": "--no-warnings --experimental-specifier-resolution=node --loader ts-node/esm",
-        "TS_NODE_CWD": "${workspaceFolder}"
-      }
+      "program": "${file}",
+      "runtimeExecutable": "tsx",
+      "skipFiles": ["<node_internals>/**", "${workspaceFolder}/node_modules/**"]
     }
   ]
 }
